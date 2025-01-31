@@ -1,0 +1,78 @@
+@import url('https://fonts.googleapis.com/css2?family=Rajdhani:wght@300;400;500;600;700&family=VT323&display=swap');
+
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --colors-bg--300: #1e181e;
+  --colors-bg--500: #191a1e;
+  --colors-primary--200: #f4908b;
+  --colors-primary--300: #ea6f69;
+  --colors-primary--500: #e8615a;
+  --colors-primary--600: #9c3230;
+  --colors-primary--700: #5e2122;
+  --colors-primary--800: #451717;
+  --colors-primary--900: #3c181a;
+  --colors-secondary--500: #2be4ea;
+  --colors-secondary--900: #295459;
+  --colors-tertiary--500: #fed33f;
+  --colors-on_bg--500: var(--colors-primary--500);
+  --colors-on_tertiary--500: var(--colors-bg--300);
+  --colors-on_primary--500: var(--colors-primary--200);
+  --colors-active--500: #2bfea0;
+  --ui-glow: 0 0 5px var(--colors-primary--500);
+  --ui-glow-borders--500: 0 0 3px var(--colors-primary--500);
+  --ui-glow-color: currentcolor;
+  --ui-glow-text: -9px -6px 40px var(--ui-glow-color);
+  --ui-notch-amount: 1rem;
+}
+
+@layer base {
+  html {
+    @apply antialiased;
+  }
+
+  body {
+    @apply min-h-screen bg-[var(--colors-bg--500)] text-[var(--colors-on_bg--500)] font-['Rajdhani'];
+    background-image: radial-gradient(ellipse at 33% 10%, #461616 0%, transparent 75%);
+    background-repeat: no-repeat;
+  }
+}
+
+@layer components {
+  .cyberpunk-card {
+    @apply bg-[var(--colors-bg--300)] border-2 border-[var(--colors-primary--600)];
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - var(--ui-notch-amount)), calc(100% - var(--ui-notch-amount)) 100%, 0 100%);
+  }
+
+  .cyberpunk-button {
+    @apply bg-transparent border-2 border-[var(--colors-secondary--500)] text-[var(--colors-secondary--500)] 
+           px-4 py-2 uppercase transition-colors font-medium tracking-wider;
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%);
+  }
+
+  .cyberpunk-button:hover {
+    @apply bg-[var(--colors-secondary--900)];
+  }
+
+  .cyberpunk-heading {
+    @apply font-['VT323'] uppercase tracking-wider;
+    text-shadow: var(--ui-glow-text);
+  }
+
+  .cyberpunk-border {
+    @apply relative;
+  }
+
+  .cyberpunk-border::after {
+    @apply content-[''] absolute bottom-0 left-0 w-full h-[2px] bg-[var(--colors-primary--500)];
+    box-shadow: var(--ui-glow);
+  }
+
+  .cyberpunk-input {
+    @apply bg-[var(--colors-bg--300)] border-2 border-[var(--colors-primary--600)] text-[var(--colors-primary--500)]
+           px-4 py-2 outline-none w-full font-['Rajdhani'] tracking-wider;
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%);
+  }
+}
