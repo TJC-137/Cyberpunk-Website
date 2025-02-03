@@ -29,9 +29,7 @@
 }
 
 @layer base {
-  html {
-    @apply antialiased;
-  }
+  html {@apply antialiased;}
 
   body {
     @apply min-h-screen bg-[var(--colors-bg--500)] text-[var(--colors-on_bg--500)] font-['Rajdhani'];

@@ -1,0 +1,27 @@
+[
+    {
+      "name": "V",
+      "role": "Protagonist",
+      "description": "A mercenary seeking immortality in Night City.",
+      "image": "https://images.unsplash.com/photo-1578632767115-351597cf2477?auto=format&fit=crop&w=800"
+    },
+    {
+      "name": "Johnny Silverhand",
+      "role": "Digital Ghost",
+      "description": "A legendary rockerboy with a vendetta against corporations.",
+      "image": "https://images.unsplash.com/photo-1614741118887-7a4ee193a5fa?auto=format&fit=crop&w=800"
+    },
+    {
+      "name": "David Martinez",
+      "role": "Edgerunner",
+      "description": "A former student turned cyberpunk in search of glory.",
+      "image": "https://images.unsplash.com/photo-1633265486064-086b219458ec?auto=format&fit=crop&w=800"
+    },
+    {
+      "name": "Lucy",
+      "role": "Netrunner",
+      "description": "A mysterious netrunner with a dark past.",
+      "image": "https://images.unsplash.com/photo-1618172193763-c511deb635ca?auto=format&fit=crop&w=800"
+    }
+  ]
+  
