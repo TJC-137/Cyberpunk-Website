@@ -36,6 +36,66 @@
     background-image: radial-gradient(ellipse at 33% 10%, #461616 0%, transparent 75%);
     background-repeat: no-repeat;
   }
+
+  /* Estilo para la barra de desplazamiento */
+  ::-webkit-scrollbar {
+    width: 10px; /* Ancho de la barra */
+    height: 10px; /* Altura de la barra horizontal */
+  }
+
+  /* Fondo de la barra de desplazamiento */
+  ::-webkit-scrollbar-track {
+    background: transparent; /* Fondo transparente */
+    border: 2px solid #e8615a; /* Borde rojo */
+  }
+
+  /* Estilo del pulgar (la parte movible) */
+  ::-webkit-scrollbar-thumb {
+    background: transparent; /* Hueco, fondo transparente */
+    border: 2px solid #e8615a; /* Borde rojo */
+    box-shadow: 0 0 8px #e8615a; /* Efecto de resplandor */
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: #2be4ea; /* Relleno azul al hacer hover */
+    border-color: #2be4ea; /* Borde azul */
+    box-shadow: 0 0 15px #2be4ea; /* Aumentar el resplandor azul */
+  }
+  
+
+  /* Flechas de arriba y abajo de la barra de desplazamiento */
+  ::-webkit-scrollbar-button {
+    background: transparent; /* Flechas transparentes */
+    height: 20px;
+    width: 20px;
+    border: 2px solid #e8615a; /* Borde rojo */
+    box-shadow: 0 0 5px #e8615a;
+    transition: background 0.3s ease, box-shadow 0.3s ease;
+  }
+
+  /* Flecha arriba (roja) */
+  ::-webkit-scrollbar-button:vertical:decrement {
+    background: transparent;
+    border-color: #e8615a; /* Rojo para la flecha de arriba */
+  }
+
+  /* Flecha abajo (roja) */
+  ::-webkit-scrollbar-button:vertical:increment {
+    background: transparent;
+    border-color: #e8615a; /* Rojo para la flecha de abajo */
+  }
+
+  /* Efecto hover para flecha arriba (azul) */
+  ::-webkit-scrollbar-button:vertical:decrement:hover {
+    border-color: #2be4ea; /* Azul al pasar el mouse */
+    box-shadow: 0 0 10px #2be4ea;
+  }
+
+  /* Efecto hover para flecha abajo (azul) */
+  ::-webkit-scrollbar-button:vertical:increment:hover {
+    border-color: #2be4ea; /* Azul al pasar el mouse */
+    box-shadow: 0 0 10px #2be4ea;
+  }
 }
 
 @layer components {

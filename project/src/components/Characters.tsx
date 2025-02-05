@@ -1,4 +1,3 @@
-import React from 'react';
 import characters from '../api/characters.json'; // Importar el JSON con los datos de los personajes
 
 export default function Characters() {
@@ -8,13 +7,13 @@ export default function Characters() {
       <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
         {characters.map((character) => (
           <div key={character.name} className="cyberpunk-card overflow-hidden group">
-            <div className="relative">
+            <div className="relative overflow-hidden transition-transform duration-500 group-hover:scale-105">
               <img
-                src={character.image}  // Aquí se usa la ruta del JSON
+                src={character.image}
                 alt={character.name}
-                className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
+                className="w-full h-48 object-cover cursor-pointer"
               />
-              <div className="absolute inset-0 bg-gradient-to-t from-cyber-bg-300 to-transparent opacity-60" />
+              <div className="absolute inset-0 bg-gradient-to-t from-cyber-bg-300 to-transparent opacity-60 group-hover:opacity-0 transition-opacity duration-500 pointer-events-none" />
             </div>
             <div className="p-4">
               <h3 className="text-xl font-bold text-cyber-secondary-500">{character.name}</h3>

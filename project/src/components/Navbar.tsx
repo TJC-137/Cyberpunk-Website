@@ -1,5 +1,4 @@
 import { Link } from 'react-router-dom';
-import { FiActivity } from "react-icons/fi";
 
 
 
@@ -10,8 +9,8 @@ export default function Navbar() {
         <div className="flex items-center justify-between h-16">
 
           <Link to="/" className="flex items-center space-x-2 ">
-            <FiActivity className="h-8 w-8 text-cyber-secondary-500" />
-            <img src="assets/img/CP2077.png" alt="CYBERPUNK" className="w-32 h-32 object-contain rounded-full" />
+          <img src="assets/icon/edgerunners_logo.png" alt="CYBERPUNK" className="w-12 h-12 object-contain rounded-full" />
+          <img src="assets/img/CP2077.webp" alt="CYBERPUNK" className="w-32 h-32 object-contain rounded-full" />
           </Link>
 
           <div className="flex space-x-8">
