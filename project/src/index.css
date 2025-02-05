@@ -59,6 +59,11 @@
     text-shadow: var(--ui-glow-text);
   }
 
+  .cyberpunk-subheading {
+    @apply font-['VT323'] tracking-wider;
+    text-shadow: var(--ui-glow-text);
+  }
+
   .cyberpunk-border {
     @apply relative;
   }

@@ -1,5 +1,5 @@
 import React from 'react';
-import characters from '../api/characters.json';
+import characters from '../api/characters.json'; // Importar el JSON con los datos de los personajes
 
 export default function Characters() {
   return (
@@ -10,7 +10,7 @@ export default function Characters() {
           <div key={character.name} className="cyberpunk-card overflow-hidden group">
             <div className="relative">
               <img
-                src={character.image}
+                src={character.image}  // Aquí se usa la ruta del JSON
                 alt={character.name}
                 className="w-full h-48 object-cover group-hover:scale-110 transition-transform duration-500"
               />

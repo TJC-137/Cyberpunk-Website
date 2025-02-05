@@ -1,22 +1,26 @@
-import React from 'react';
 import { Link } from 'react-router-dom';
-import { Cpu } from 'lucide-react';
+import { FiActivity } from "react-icons/fi";
+
+
 
 export default function Navbar() {
   return (
     <nav className="bg-cyber-bg-500/90 cyberpunk-border sticky top-0 z-50 backdrop-blur-sm">
       <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
         <div className="flex items-center justify-between h-16">
-          <Link to="/" className="flex items-center space-x-2">
-            <Cpu className="h-8 w-8 text-cyber-secondary-500" />
-            <span className="text-xl font-bold text-cyber-secondary-500 font-vt323">Night City</span>
+
+          <Link to="/" className="flex items-center space-x-2 ">
+            <FiActivity className="h-8 w-8 text-cyber-secondary-500" />
+            <img src="assets/img/CP2077.png" alt="CYBERPUNK" className="w-32 h-32 object-contain rounded-full" />
           </Link>
+
           <div className="flex space-x-8">
-            <Link to="/" className="text-gray-300 hover:text-cyber-secondary-500 transition-colors">Home</Link>
-            <Link to="/characters" className="text-gray-300 hover:text-cyber-secondary-500 transition-colors">Characters</Link>
-            <Link to="/music" className="text-gray-300 hover:text-cyber-secondary-500 transition-colors">Music</Link>
-            <Link to="/media" className="text-gray-300 hover:text-cyber-secondary-500 transition-colors">Media</Link>
+            <Link to="/" className="text-red-400 hover:text-cyber-secondary-500 transition-colors cyberpunk-heading">Home</Link>
+            <Link to="/characters" className="text-red-400 hover:text-cyber-secondary-500 transition-colors cyberpunk-heading">Characters</Link>
+            <Link to="/music" className="text-red-400 hover:text-cyber-secondary-500 transition-colors cyberpunk-heading">Music</Link>
+            <Link to="/media" className="text-red-400 hover:text-cyber-secondary-500 transition-colors cyberpunk-heading">Media</Link>
           </div>
+
         </div>
       </div>
     </nav>
