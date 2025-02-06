@@ -8,7 +8,6 @@ export default function Music() {
       <div className="cyberpunk-card p-6">
         <div className="relative w-full">
           {/* Contenedor con borde y efectos */}
-          <div className="border-2 border-cyber-primary-600 p-1 rounded-lg shadow-lg">
             <iframe 
               src="https://open.spotify.com/embed/album/1VGVJdmvOSRK2w9RKXk18A?utm_source=generator&theme=0" 
               width="100%" 
@@ -16,8 +15,7 @@ export default function Music() {
               allow="autoplay; clipboard-write; encrypted-media; fullscreen; picture-in-picture"
               loading="lazy"
               className="rounded-lg border-2 border-cyber-secondary-500 shadow-lg"
-            ></iframe>
-          </div>
+            ></iframe>         
         </div>
       </div>
     </div>
