@@ -1,4 +1,3 @@
-import React from 'react';
 import { Routes, Route } from 'react-router-dom';
 import Navbar from './components/Navbar';
 import Home from './components/Home';
@@ -8,7 +7,7 @@ import Media from './components/Media';
 
 function App() {
   return (
-    <div className="min-h-screen bg-black text-white">
+    <div className="min-h-screen bg-[rgba(0,0,0,0.5)] text-white">
       <Navbar />
       <Routes>
         <Route path="/" element={<Home />} />
