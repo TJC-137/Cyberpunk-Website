@@ -1,7 +1,5 @@
 import { Link } from 'react-router-dom';
 
-
-
 export default function Navbar() {
   return (
     <nav className="bg-cyber-bg-500/90 cyberpunk-border sticky top-0 z-50 backdrop-blur-sm">
@@ -10,7 +8,7 @@ export default function Navbar() {
 
           <Link to="/" className="flex items-center space-x-2 ">
           <img src="assets/icon/edgerunners_logo.png" alt="CYBERPUNK" className="w-12 h-12 object-contain rounded-full" />
-          <img src="assets/img/CP2077.webp" alt="CYBERPUNK" className="w-32 h-32 object-contain rounded-full" />
+          <img src="assets/img/CP2077.webp" alt="CYBERPUNK" className="w-32 h-32 object-contain rounded-full img-responsive" />
           </Link>
 
           <div className="flex space-x-8">
