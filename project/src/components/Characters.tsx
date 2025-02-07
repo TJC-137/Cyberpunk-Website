@@ -9,7 +9,7 @@ export default function Characters() {
           <div key={character.name} className="cyberpunk-card overflow-hidden group">
             <div className="relative overflow-hidden transition-transform duration-500 group-hover:scale-105">
               <img
-                src={character.image}
+                src={`/img/${character.image}`}
                 alt={character.name}
                 className="w-full h-48 object-cover cursor-pointer"
               />

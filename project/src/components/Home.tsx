@@ -10,7 +10,7 @@ export default function Home() {
         {/* Background Cover Image */}
         <div className="absolute inset-0">
           <img
-            src="assets/img/nightcity.gif"
+            src="img/nightcity.gif"
             alt="Cyberpunk City"
             className="w-full h-full object-cover"
           />
@@ -59,7 +59,7 @@ export default function Home() {
           {/* Game Image */}
           <div className="cyberpunk-card p-2">
             <img
-              src="assets/img/Johny-77.webp"
+              src="img/Johny-77.webp"
               alt="Cyberpunk Game"
               className="w-full aspect-video object-cover cursor-pointer transition-all duration-300 hover:opacity-80 hover:shadow-lg hover:brightness-90"
             />
@@ -82,7 +82,7 @@ export default function Home() {
           {/* Anime Image */}
           <div className="cyberpunk-card p-2">
             <img
-              src="assets/img/moon.webp"
+              src="img/moon.webp"
               alt="Cyberpunk Anime"
               className="w-full aspect-video object-cover cursor-pointer transition-all duration-300 hover:opacity-80 hover:shadow-lg hover:brightness-90"
             />

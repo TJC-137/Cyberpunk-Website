@@ -3,25 +3,25 @@
     "name": "V",
     "role": "Protagonist",
     "description": "A mercenary seeking immortality in Night City.",
-    "image": "/assets/img/v.webp"
+    "image": "v.webp"
   },
   {
     "name": "Johnny Silverhand",
     "role": "Digital Ghost",
     "description": "A legendary rockerboy with a vendetta against corporations.",
-    "image": "/assets/img/johny.webp"
+    "image": "johny.webp"
   },
   {
     "name": "David Martinez",
     "role": "Edgerunner",
     "description": "A former student turned cyberpunk in search of glory.",
-    "image": "/assets/img/david-martinez.webp"
+    "image": "david-martinez.webp"
   },
   {
     "name": "Lucy",
     "role": "Netrunner",
     "description": "A mysterious netrunner with a dark past.",
-    "image": "/assets/img/lucy.webp"
+    "image": "lucy.webp"
   }
 ]
   
