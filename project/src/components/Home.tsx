@@ -1,3 +1,4 @@
+import { Link } from 'react-router-dom';
 import { ChevronRight } from 'lucide-react';
 
 export default function Home() {
@@ -32,10 +33,12 @@ export default function Home() {
             </p>
 
             {/* Explore Button */}
+          <Link to="/map">
             <button className="cyberpunk-button cyberpunk-heading group flex items-center space-x-2">
               <span>Explore Night City</span>
               <ChevronRight className="w-5 h-5 group-hover:translate-x-1 transition-transform" />
             </button>
+          </Link>
 
           </div>
         </div>

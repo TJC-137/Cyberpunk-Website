@@ -46,7 +46,8 @@ export default function Media() {
                     <img
                       src={trailer.thumbnail}
                       alt={trailer.title}
-                      className="w-full h-64 object-cover"
+                      className="w-full h-64 object-cover cursor-pointer"
+                      loading="lazy"
                     />
                     <div className="absolute inset-0 flex items-center justify-center bg-cyber-bg-500/50 opacity-0 group-hover:opacity-100 transition-opacity cursor-pointer">
                       <button
@@ -75,6 +76,7 @@ export default function Media() {
                 src={shot.src}
                 alt={shot.alt}
                 className="w-full h-48 object-cover hover:scale-110 transition-transform duration-500 cursor-pointer"
+                loading="lazy"
               />
             </div>
           ))}
