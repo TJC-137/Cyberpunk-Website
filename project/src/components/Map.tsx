@@ -21,7 +21,13 @@ const Map: React.FC = () => {
         >
           Toggle Mode
         </button>
-        <TransformWrapper initialScale={1} wheel={{ step: 0.1 }}>
+        <TransformWrapper 
+            initialScale={1.1}              // Inicia con un zoom mayor al 100%
+            minScale={1.1}                  // Evita hacer zoom por debajo de 1.5
+            wheel={{ step: 0.1 }}           // Sensibilidad del zoom con la rueda
+            centerOnInit={true}            // Centra el contenido inicialmente
+            limitToBounds={true}            // Limita el panning para evitar espacio vacío excesivo
+        >
           <TransformComponent>
             <img
               src={imageSrc}

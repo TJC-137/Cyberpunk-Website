@@ -154,6 +154,15 @@ body {
            px-4 py-2 outline-none w-full font-['Rajdhani'] tracking-wider;
     clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%);
   }
+
+  .cyberpunk-card {
+    @apply bg-[var(--colors-bg--300)] border-2 border-[var(--colors-primary--600)];
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - var(--ui-notch-amount)), calc(100% - var(--ui-notch-amount)) 100%, 0 100%);
+  }
+  
+  .cyberpunk-card:hover {
+    border-color: var(--colors-secondary--500); /* Cambia a azul (#2be4ea) */
+  }  
 }
 
 /* Music */
@@ -183,8 +192,8 @@ body {
   display: block; /* Mostrar por defecto en pantallas grandes */
 }
 
-@media (max-width: 560px) {
-  .img-responsive-560 {
+@media (max-width: 520px) {
+  .img-responsive-520 {
     display: none; /* Ocultar en pantallas menores a  */
   }
 }
@@ -195,7 +204,7 @@ body {
   }
 }
 
-
+/* Map */
 /* Contenedor principal que centra el div del mapa */
 .map-wrapper {
   width: 100%;
@@ -208,15 +217,19 @@ body {
 
 /* Contenedor del mapa con estilos generales */
 .map-container {
-  width: 75%;
-  height: 75%;
+  width: 80%;
+  height: 80%;
   max-width: 1200px;
   position: relative;
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
   border-radius: 8px;
   overflow: hidden;
   cursor: grab;
-  border: 2px solid #e8615a; /* Por defecto, modo light */
+}
+
+/* Cuando está en modo light, cambia el color del borde */
+.map-container.light {
+  border: 2px solid #e8615a;
 }
 
 /* Cuando está en modo dark, cambia el color del borde */
@@ -261,17 +274,47 @@ body {
   color: #000;
 }
 
+
 /* Imagen del mapa */
 .map-image {
   width: 100%;
-  height: auto;
+  height: 100%;
   display: block;
+  object-fit: cover;
+  object-position: center;
+  transition: all 0.3s ease;
 }
+
+
 
 /* Media query: en pantallas pequeñas se ajusta el tamaño del contenedor */
 @media (max-width: 768px) {
   .map-container {
     width: 75%;
     height: 45%;
+  }
+}
+
+/* Media query: en pantallas pequeñas se ajusta aún más el tamaño */
+@media (max-width: 560px) {
+  .map-container {
+    width: 70%;
+    height: 40%;
+  }
+}
+
+/* Media query: en pantallas muy pequeñas se reduce el tamaño */
+@media (max-width: 480px) {
+  .map-container {
+    width: 70%;
+    height: 35%;
+  }
+}
+
+/* Media query: en pantallas extremadamente pequeñas se ajusta el tamaño */
+@media (max-width: 320px) {
+  .map-container {
+    width: 75%;
+    height: 25%;
   }
 }
