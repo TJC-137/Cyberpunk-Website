@@ -183,8 +183,95 @@ body {
   display: block; /* Mostrar por defecto en pantallas grandes */
 }
 
+@media (max-width: 560px) {
+  .img-responsive-560 {
+    display: none; /* Ocultar en pantallas menores a  */
+  }
+}
+
 @media (max-width: 480px) {
-  .img-responsive {
+  .img-responsive-480 {
     display: none; /* Ocultar en pantallas menores a 480px */
+  }
+}
+
+
+/* Contenedor principal que centra el div del mapa */
+.map-wrapper {
+  width: 100%;
+  height: 93vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background-color: #000;
+}
+
+/* Contenedor del mapa con estilos generales */
+.map-container {
+  width: 75%;
+  height: 75%;
+  max-width: 1200px;
+  position: relative;
+  box-shadow: 0 0 10px rgba(0,0,0,0.5);
+  border-radius: 8px;
+  overflow: hidden;
+  cursor: grab;
+  border: 2px solid #e8615a; /* Por defecto, modo light */
+}
+
+/* Cuando está en modo dark, cambia el color del borde */
+.map-container.dark {
+  border-color: #2be4ea;
+}
+
+/* Botón para cambiar de modo */
+.toggle-button {
+  position: absolute;
+  top: 10px;
+  left: 10px;
+  z-index: 10;
+  background: rgba(192, 192, 192, 0.151);
+  border-radius: 4px;
+  padding: 5px 10px;
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+/* Estilos para el botón en modo light */
+.toggle-button.light {
+  border: 2px solid #2be4ea;
+  color: #2be4ea;
+}
+
+/* Estilos para el botón en modo dark */
+.toggle-button.dark {
+  border: 2px solid #e8615a;
+  color: #e8615a;
+  
+}
+
+/* Efecto hover para el botón */
+.toggle-button.light:hover {
+  background: #2be4ea;
+  color: #000;
+}
+
+.toggle-button.dark:hover {
+  background: #e8615a;
+  color: #000;
+}
+
+/* Imagen del mapa */
+.map-image {
+  width: 100%;
+  height: auto;
+  display: block;
+}
+
+/* Media query: en pantallas pequeñas se ajusta el tamaño del contenedor */
+@media (max-width: 768px) {
+  .map-container {
+    width: 75%;
+    height: 45%;
   }
 }
