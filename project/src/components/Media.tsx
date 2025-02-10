@@ -13,6 +13,7 @@ function getEmbedUrl(url: string) {
 
 export default function Media() {
   const [playingTrailer, setPlayingTrailer] = useState<number | null>(null);
+  const [activeScreenshot, setActiveScreenshot] = useState<string | null>(null);
 
   return (
     <div className="max-w-7xl mx-auto px-4 py-16">
@@ -48,6 +49,7 @@ export default function Media() {
                       alt={trailer.title}
                       className="w-full h-64 object-cover cursor-pointer"
                       loading="lazy"
+                      onClick={() => setPlayingTrailer(index)}
                     />
                     <div className="absolute inset-0 flex items-center justify-center bg-cyber-bg-500/50 opacity-0 group-hover:opacity-100 transition-opacity cursor-pointer">
                       <button
@@ -77,11 +79,34 @@ export default function Media() {
                 alt={shot.alt}
                 className="w-full h-48 object-cover hover:scale-110 transition-transform duration-500 cursor-pointer"
                 loading="lazy"
+                onClick={() => setActiveScreenshot(shot.src)}
               />
             </div>
           ))}
         </div>
       </div>
+
+      {/* Modal para screenshot ampliada */}
+      {activeScreenshot && (
+        <div
+          className="fixed inset-0 bg-black bg-opacity-80 flex items-center justify-center z-50"
+          onClick={() => setActiveScreenshot(null)}
+        >
+          <div className="relative max-w-4xl max-h-full">
+            <button
+              onClick={() => setActiveScreenshot(null)}
+              className="absolute top-2 right-2 p-2 rounded-full bg-cyber-secondary-500 text-cyber-bg-500 z-10"
+            >
+              <X className="w-5 h-5" />
+            </button>
+            <img
+              src={activeScreenshot}
+              alt="Enlarged Screenshot"
+              className="w-full h-auto"
+            />
+          </div>
+        </div>
+      )}
     </div>
   );
 }
