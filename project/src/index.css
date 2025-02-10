@@ -47,9 +47,6 @@ body {
   background-attachment: fixed;
 }
 
-
-
-
 /* Estilo para la barra de scroll */
   ::-webkit-scrollbar {
     width: 10px; /* Ancho de la barra */
@@ -218,7 +215,8 @@ body {
 /* Contenedor del mapa con estilos generales */
 .map-container {
   width: 80%;
-  height: 80%;
+  height: auto;
+  max-height: 80%;
   max-width: 1200px;
   position: relative;
   box-shadow: 0 0 10px rgba(0,0,0,0.5);
@@ -284,7 +282,6 @@ body {
   object-position: center;
   transition: all 0.3s ease;
 }
-
 
 
 /* Media query: en pantallas pequeñas se ajusta el tamaño del contenedor */
