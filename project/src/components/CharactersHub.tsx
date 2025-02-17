@@ -1,12 +1,11 @@
+import { useNavigate } from "react-router-dom";
 import { motion } from "framer-motion";
 
-interface CharactersHubProps {
-  setCharactersView: (view: "game" | "anime") => void;
-}
-
-export default function CharactersHub({ setCharactersView }: CharactersHubProps) {
+export default function CharactersHub() {
+  const navigate = useNavigate();
+  
   return (
-    <div className="relative w-full flex items-center justify-center">
+    <div className="relative w-full h-screen flex items-center justify-center">
       <div className="relative w-[80%] h-[80%] overflow-hidden flex">
         {/* Botón para seleccionar personajes de juegos */}
         <motion.div
@@ -18,7 +17,7 @@ export default function CharactersHub({ setCharactersView }: CharactersHubProps)
             opacity: 0.8,
           }}
           whileHover={{ scale: 1, opacity: 1 }}
-          onClick={() => setCharactersView("game")}
+          onClick={() => navigate("/characters/game")}
         >
           <h2 className="cyberpunk-heading absolute top-8 left-8 text-3xl font-bold text-cyber-secondary-500">
             Game Characters
@@ -35,7 +34,7 @@ export default function CharactersHub({ setCharactersView }: CharactersHubProps)
             opacity: 0.8,
           }}
           whileHover={{ scale: 1, opacity: 1 }}
-          onClick={() => setCharactersView("anime")}
+          onClick={() => navigate("/characters/anime")}
         >
           <h2 className="cyberpunk-heading absolute bottom-8 right-8 text-3xl font-bold text-cyber-primary-300">
             Anime Characters

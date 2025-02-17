@@ -8,8 +8,8 @@ export default function Navbar({ resetView }: { resetView?: () => void }) {
         <div className="flex items-center justify-between h-16">
 
           <Link to="/" className="flex items-center space-x-2">
-            <img src="icon/edgerunners_logo.png" alt="CYBERPUNK" className="w-12 h-12 object-contain rounded-full" />
-            <img src="img/CP2077.webp" alt="CYBERPUNK" className="w-32 h-32 object-contain rounded-full img-responsive-520" />
+            <img src="/icon/edgerunners_logo.png" alt="CYBERPUNK" className="w-12 h-12 object-contain rounded-full" />
+            <img src="/img/CP2077.webp" alt="CYBERPUNK" className="w-32 h-32 object-contain rounded-full img-responsive-520" />
           </Link>
 
           <div className="flex space-x-8">

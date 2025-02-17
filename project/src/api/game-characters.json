@@ -1,15 +1,58 @@
 [
   {
     "name": "V",
-    "role": "Protagonist",
-    "description": "A mercenary seeking immortality in Night City.",
+    "role": "Mercenario",
+    "description": "Un mercenario en busca de su propio destino en Night City.",
+    "lore": "Un mercenario en busca de su propio destino en Night City, una metrópolis despiadada donde la tecnología y el poder dictan las reglas del juego. Capaz de personalizar su cuerpo con aumentos cibernéticos y mejorar sus habilidades en combate, sigilo o hacking, V se adapta al peligroso mundo que lo rodea. Su viaje está definido por las decisiones que toma y las alianzas que forja, en una ciudad donde cada elección tiene consecuencias.",
     "image": "v.webp"
   },
   {
     "name": "Johnny Silverhand",
-    "role": "Digital Ghost",
-    "description": "A legendary rockerboy with a vendetta against corporations.",
+    "role": "Leyenda de Night City",
+    "description": "Un icónico rockero y revolucionario que dejó su huella en la historia de Night City.",
+    "lore": "Un icónico rockero y revolucionario que dejó su huella en la historia de Night City. Johnny es más que un músico; es un símbolo de resistencia contra el dominio de las megacorporaciones. Con una personalidad fuerte y una actitud desafiante, sigue luchando por sus ideales, sin importar el precio que deba pagar. Su pasado está lleno de gloria, tragedia y un legado que pocos pueden ignorar.",
     "image": "johny.webp"
+  },
+  {
+    "name": "Judy Álvarez",
+    "role": "Técnica en Braindance",
+    "description": "Judy es una de las mejores técnicas de braindance en Night City. ",
+    "lore": "Judy es una de las mejores técnicas de braindance en Night City, especializada en la manipulación de recuerdos y experiencias digitales. Su talento la ha convertido en una pieza clave dentro del mundo clandestino de la ciudad. Independiente y de fuerte carácter, no solo busca sobrevivir en un entorno hostil, sino también hacer una diferencia en la vida de aquellos que han sido olvidados por el sistema.",
+    "image": "judy.webp"
+  },
+  {
+    "name": "Panam Palmer",
+    "role": "Ex-Nómada del Clan Aldecaldo",
+    "description": "Panam es una guerrera feroz y leal, que solía formar parte del clan de nómadas Aldecaldo antes de tomar su propio camino.",
+    "lore": "Panam es una guerrera feroz y leal, que solía formar parte del clan de nómadas Aldecaldo antes de tomar su propio camino. Aunque su vida se basa en la independencia, la familia y la confianza siguen siendo valores fundamentales para ella. Con una destreza impecable en combate y una habilidad innata para manejar cualquier vehículo, Panam está dispuesta a luchar por aquellos que considera su verdadera familia, incluso si eso significa enfrentarse a los peligros de Night City y el desierto que la rodea.",
+    "image": "panam.webp"
+  },
+  {
+    "name": "River Ward",
+    "role": "Detective de la NCPD",
+    "description": "River es un detective de la Policía de Night City que, a diferencia de muchos de sus colegas, aún cree en la justicia.",
+    "lore": "River es un detective de la Policía de Night City que, a diferencia de muchos de sus colegas, aún cree en la justicia. Su sentido del deber y su determinación lo han puesto en la mira de gente peligrosa, tanto dentro como fuera de las fuerzas del orden. Con un fuerte código moral y una determinación férrea, River lucha constantemente contra la corrupción del sistema, aunque sabe que cada paso hacia la verdad puede costarle más de lo que está dispuesto a pagar.",
+    "image": "river.webp"
+  },
+  {
+    "name": "Rogue Amendiares",
+    "role": "Fixer Legendaria",
+    "description": "Rogue es una de las figuras más influyentes de Night City y una de las fixers más poderosas del mercado clandestino.",
+    "lore": "Rogue es una de las figuras más influyentes de Night City y una de las fixers más poderosas del mercado clandestino. Su pasado está ligado a algunos de los nombres más grandes de la historia de la ciudad, pero ha sabido sobrevivir en un mundo donde las viejas leyendas suelen caer en el olvido. Implacable en los negocios y temida por muchos, Rogue juega según sus propias reglas, manteniendo el control absoluto sobre el Afterlife, el bar más emblemático de la ciudad.",
+    "image": "rogue.webp"
+  },
+  {
+    "name": "Goro Takemura",
+    "role": "Ex-Samurai Corporativo",
+    "description": "Takemura es un hombre de honor, nacido y criado bajo el código de la lealtad y la disciplina.",
+    "lore": "Takemura es un hombre de honor, nacido y criado bajo el código de la lealtad y la disciplina. Como antiguo guardaespaldas de Arasaka, ha dedicado su vida al deber y la obediencia, pero las circunstancias lo han obligado a replantearse su lugar en el mundo. Hábil con la katana y mortal en combate, Takemura es un guerrero que lucha con convicción, buscando respuestas en una ciudad donde la lealtad es un bien escaso.",
+    "image": "takemura.webp"
+  },
+  {
+    "name": "Adam Smasher",
+    "role": "Cyborg de Elite de Arasaka",
+    "description": "Adam Smasher es la pesadilla hecha realidad para cualquier mercenario en Night City.",
+    "lore": "Adam Smasher es la pesadilla hecha realidad para cualquier mercenario en Night City. Completamente reconstruido con aumentos cibernéticos, es más máquina que humano. Como ejecutor de Arasaka, su brutalidad y falta de empatía lo han convertido en una leyenda del terror en el mundo del crimen y la guerra corporativa. Para él, la compasión es una debilidad y la violencia, la única respuesta.",
+    "image": "smasher-game.webp"
   }
 ]
-  

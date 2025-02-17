@@ -2,14 +2,57 @@
   {
     "name": "David Martinez",
     "role": "Edgerunner",
-    "description": "A former student turned cyberpunk in search of glory.",
+    "description": "A determined street kid turned cyberpunk hero.",
+    "lore": "David Martinez, a young man striving to survive in the harsh world of Night City, finds himself transformed into a true edgerunner. His journey is one of resilience, sacrifice, and rebellion against an oppressive system.",
     "image": "david-martinez.webp"
   },
   {
     "name": "Lucy",
     "role": "Netrunner",
     "description": "A mysterious netrunner with a dark past.",
+    "lore": "Lucy, with her enigmatic aura and unparalleled netrunning skills, navigates the digital underworld of Night City, hiding secrets that could change everything. Her past is as shrouded in mystery as her eyes.",
     "image": "lucy.webp"
+  },
+  {
+    "name": "Rebecca",
+    "role": "Rebel Edgerunner",
+    "description": "A fierce and unpredictable edgerunner with a wild spirit.",
+    "lore": "Rebecca is known for her unyielding attitude and extraordinary combat skills. Her rebellious nature and distinct style make her a symbol of defiance in the dystopian landscape of Night City.",
+    "image": "rebecca.webp"
+  },
+  {
+    "name": "Maine",
+    "role": "Leader",
+    "description": "The grizzled leader of the edgerunner crew.",
+    "lore": "Maine is a veteran of the streets, leading his crew with both a hardened exterior and a deeply caring heart for his team. His experience in the ruthless world of Night City makes him a pillar of strength for the edgerunners.",
+    "image": "maine.webp"
+  },
+  {
+    "name": "Kiwi",
+    "role": "Medic",
+    "description": "The resourceful medic of the team.",
+    "lore": "Kiwi uses her technical prowess and medical expertise to keep the crew alive, patching up wounds and maintaining cybernetic enhancements. Her calm under pressure is a vital asset in the chaos of Night City.",
+    "image": "kiwi.webp"
+  },
+  {
+    "name": "Falco",
+    "role": "Tech Specialist",
+    "description": "A genius with gadgets and tech.",
+    "lore": "Falco's mastery over technology and his knack for innovation provide the edgerunners with state-of-the-art gear. His skills in digital warfare and cyber enhancements are indispensable in their fight against the corporatocracy.",
+    "image": "falco.webp"
+  },
+  {
+    "name": "Pilar",
+    "role": "Data Thief",
+    "description": "The elusive data thief and brother of Rebecca.",
+    "lore": "Pilar is renowned for his stealth and cunning in the digital underworld. Always lurking in the shadows, he plays a crucial role in supporting his sister Rebecca and navigating the treacherous world of Night City.",
+    "image": "pilar.webp"
+  },
+  {
+    "name": "Adam Smasher",
+    "role": "Cyborg Enforcer",
+    "description": "A brutal enforcer with an iron body.",
+    "lore": "Adam Smasher represents the cold, unyielding force of corporate power in Night City. His cybernetic enhancements and merciless nature make him one of the most feared figures in the dystopian urban landscape.",
+    "image": "smasher-anime.webp"
   }
 ]
-  
