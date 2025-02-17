@@ -61,11 +61,13 @@ export default function Home() {
           
           {/* Game Image */}
           <div className="cyberpunk-card p-2">
+            <Link to="/characters/game" className="cursor-pointer">
             <img
               src="img/Johny-77.webp"
               alt="Cyberpunk Game"
               className="w-full aspect-video object-cover cursor-pointer transition-all duration-300 hover:opacity-80 hover:shadow-lg hover:brightness-90"
             />
+            </Link>
           </div>
 
         </div>
@@ -84,11 +86,13 @@ export default function Home() {
 
           {/* Anime Image */}
           <div className="cyberpunk-card p-2">
+            <Link to="/characters/anime" className="cursor-pointer">
             <img
               src="img/moon.webp"
               alt="Cyberpunk Anime"
               className="w-full aspect-video object-cover cursor-pointer transition-all duration-300 hover:opacity-80 hover:shadow-lg hover:brightness-90"
             />
+            </Link>
           </div>
           
         </div>

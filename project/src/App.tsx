@@ -18,6 +18,9 @@ function App() {
       <Routes>
         <Route path="/" element={<Home />} />
         <Route path="/characters" element={<Characters charactersView={charactersView} setCharactersView={setCharactersView} />} />
+        <Route path="/characters/hub" element={<Characters charactersView="hub" setCharactersView={setCharactersView} />} />
+        <Route path="/characters/game" element={<Characters charactersView="game" setCharactersView={setCharactersView} />} />
+        <Route path="/characters/anime" element={<Characters charactersView="anime" setCharactersView={setCharactersView} />} />
         <Route path="/character/:name" element={<SelectedCharacter />} />
         <Route path="/music" element={<Music />} />
         <Route path="/map" element={<Map />} />
