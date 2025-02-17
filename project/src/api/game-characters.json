@@ -1,0 +1,15 @@
+[
+  {
+    "name": "V",
+    "role": "Protagonist",
+    "description": "A mercenary seeking immortality in Night City.",
+    "image": "v.webp"
+  },
+  {
+    "name": "Johnny Silverhand",
+    "role": "Digital Ghost",
+    "description": "A legendary rockerboy with a vendetta against corporations.",
+    "image": "johny.webp"
+  }
+]
+  

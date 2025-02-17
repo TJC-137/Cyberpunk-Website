@@ -1,18 +1,24 @@
 import { Routes, Route } from 'react-router-dom';
+import { useState } from 'react';
 import Navbar from './components/Navbar';
-import Home from './components/Home';
-import Characters from './components/Characters';
-import Music from './components/Music';
-import Map from './components/Map';
-import Media from './components/Media';
+import Home from './pages/Home';
+import Characters from './pages/Characters';
+import Music from './pages/Music';
+import Map from './pages/Map';
+import Media from './pages/Media';
+import SelectedCharacter from './pages/SelectedCharacter';
 
 function App() {
+  const [charactersView, setCharactersView] = useState<"hub" | "game" | "anime">("hub");
+
+
   return (
     <div className="min-h-screen bg-[rgba(0,0,0,0.5)] text-white">
-      <Navbar />
+      <Navbar resetView={() => setCharactersView("hub")} />
       <Routes>
         <Route path="/" element={<Home />} />
-        <Route path="/characters" element={<Characters />} />
+        <Route path="/characters" element={<Characters charactersView={charactersView} setCharactersView={setCharactersView} />} />
+        <Route path="/character/:name" element={<SelectedCharacter />} />
         <Route path="/music" element={<Music />} />
         <Route path="/map" element={<Map />} />
         <Route path="/media" element={<Media />} />

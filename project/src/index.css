@@ -127,6 +127,17 @@ body {
     @apply bg-[var(--colors-secondary--900)];
   }
 
+  .cyberpunk-button-back {
+    @apply bg-transparent border-2 border-[var(--colors-tertiary--500)] text-[var(--colors-tertiary--500)] 
+           px-4 py-2 uppercase transition-colors font-medium tracking-wider;
+    clip-path: polygon(0 0, 100% 0, 100% calc(100% - 10px), calc(100% - 10px) 100%, 0 100%);
+  }
+
+  .cyberpunk-button-back:hover {
+    @apply bg-[var(--colors-tertiary--500)];
+    color: var(--colors-bg--500);
+  }
+
   .cyberpunk-heading {
     @apply font-['VT323'] uppercase tracking-wider;
     text-shadow: var(--ui-glow-text);
